@@ -1,0 +1,22 @@
+# Local Android/Gradle state
+.gradle/
+.tools/
+local.properties
+**/build/
+
+# IDE and OS files
+.idea/
+*.iml
+.DS_Store
+
+# Local device inventory/audit files
+qm7k-package-audit.md
+qm7k-packages.txt
+qm7k-packages-with-paths.txt
+
+# Signing credentials and ADB material
+*.jks
+*.keystore
+*.pem
+*.key
+adbkey*

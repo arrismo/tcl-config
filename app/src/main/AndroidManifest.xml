@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:theme="@style/AppTheme" android:label="Sports Screensaver" android:allowBackup="false" android:supportsRtl="true" android:hardwareAccelerated="false">
+        <service android:name=".SportsDreamService" android:exported="true" android:label="Sports Screensaver" android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter><action android:name="android.service.dreams.DreamService" /></intent-filter>
+            <meta-data android:name="android.service.dream" android:resource="@xml/dream_info" />
+        </service>
+    </application>
+</manifest>
